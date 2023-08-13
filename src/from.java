@@ -11,9 +11,9 @@ public class from {
         String path="";
         FileChooser fileChooser = new FileChooser();
         fileChooser.setTitle("Save File");
-        fileChooser.setInitialFileName("KEY.nec"); // 指定默认文件名
+        fileChooser.setInitialFileName("KEY.nec"); 
 
-        File file = fileChooser.showSaveDialog(stage); // 打开保存文件对话框
+        File file = fileChooser.showSaveDialog(stage); 
 
         if (file != null) {
             String filePath = file.getAbsolutePath();
