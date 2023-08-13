@@ -1,0 +1,59 @@
+
+.root {
+    -fx-background-color: #3c3f41;
+}
+
+
+.text-field {
+    -fx-background-color: #4B4B4B;
+    -fx-text-inner-color: white;
+}
+
+.label {
+    -fx-text-fill: white;
+}
+
+
+
+.scroll-bar {
+    -fx-background-color: #4B4B4B;
+}
+
+.scroll-bar-thumb {
+    -fx-background-color: #6B6B6B;
+}
+
+
+
+.scroll-bar-thumb:hover {
+    -fx-background-color: #8B8B8B;
+}
+
+.scroll-bar-thumb:pressed {
+    -fx-background-color: #4B4B4B;
+}
+.msg-line{
+    -fx-stroke: #cacaca;
+    -fx-stroke-width: 1px;
+}
+.button {
+    -fx-background-color: rgba(232, 232, 232, 0.93);
+    -fx-border-color: #232222;
+    -fx-border-width: 1px;
+}
+
+.text-area .scroll-bar:vertical {
+    -fx-pref-width: 7px;
+    -fx-background-color: rgba(35, 34, 34, 0.5);
+}
+
+.text-area {
+    -fx-background-color: #282828;
+}
+.text-area {
+    -fx-control-inner-background: #282828;
+}
+
+.text-area .text-input .prompt-text {
+    -fx-prompt-text-fill: #d0cfcf;
+}
