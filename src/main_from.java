@@ -22,6 +22,7 @@ import java.awt.Font;
 import java.awt.*;
 
 
+
 public class main_from extends Application {
 
     private Integer Xint=15;
@@ -37,7 +38,7 @@ public class main_from extends Application {
         Scene scene=new Scene(BPane,250,85);
         primaryStage.setScene(scene);
         primaryStage.setTitle("项目");
-        javafx.scene.image.Image icon=new Image("file:src/adp.png");
+        javafx.scene.image.Image icon=new Image("file:src/img/adp.png");
         primaryStage.getIcons().add(icon);
         primaryStage.setResizable(false);
         scene.getStylesheets().add("/css/common.css");
@@ -111,7 +112,7 @@ public class main_from extends Application {
 
             Font font=new Font("宋体",Font.PLAIN,12);
 
-            java.awt.Image mimage=Toolkit.getDefaultToolkit().getImage(main_from.class.getResource("adp.png"));
+            java.awt.Image mimage=Toolkit.getDefaultToolkit().getImage(main_from.class.getResource("img/adp.png"));
             TrayIcon trayIcon=new TrayIcon(mimage,title,traymenu);
             trayIcon.setImageAutoSize(true);
             SystemTray systemTray=SystemTray.getSystemTray();
@@ -158,6 +159,21 @@ public class main_from extends Application {
         //System.out.println(enc.TEXT_ENC("你妈死了"));
         //System.out.println(dec.DEC_TEXT("JDbhMQYXRjtXxisQVap4QA=="));
         //chinese sup==PKCS#5 2^31 xo ONPADDING 2^36 chinese(utf-8 full 3bytes)
+        //System.out.println(conf.file_suffx_save(new File("C:\\Users\\serinder\\Desktop\\1ca55ac36015416186a707979ff30efe.jpg")));
+        //conf.file_suffx_save(new File("G:\\JAVA\\deccon\\src\\cag.png"),new File("W:\\new.eimg"));
+        //System.out.println("is:\t"+conf.file_suffx_thuen("W:\\new.eimg"));
+        //System.out.println("is2"+conf.view_suffx("W:\\new.eimg"));
+        //conf.file_suffx_save(new File("W:\\1ca55ac36015416186a707979ff30efe.jpg"),new File("W:\\k.eimg"));
+        //action.move_suffix_tab("W:\\1ca55ac36015416186a707979ff30efe.eimg");
+        //*try {
+        /*    action.TEMP_FILE("C:\\Users\\serinder\\Desktop\\杂物_img\\新建文件夹\\a.eimg", true);
+        /*}catch (IOException e){
+        /*    e.printStackTrace();
+        /*}
+        /*
+         */
+        System.out.println(action.move_suffix("C:\\Users\\serinder\\Desktop\\杂物_img\\新建文件夹\\a.eimg"));
+        //action.move_suffix_tab("1ca55ac36015416186a707979ff30efe.eimg");
     }
 
     public static void main(String[] args) {

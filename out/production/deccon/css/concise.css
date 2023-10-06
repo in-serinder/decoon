@@ -1,0 +1,52 @@
+.scroll-pane .scroll-bar {
+    -fx-background-color: transparent; /* 滚动条背景颜色 */
+    -fx-padding: 2px; /* 滚动条内边距 */
+    -fx-pref-width: 7px;
+    -fx-pref-height: 5px;
+}
+
+.scroll-pane .scroll-bar:horizontal {
+    -fx-background-color: #3c3f41; /* 水平滚动条背景颜色 */
+}
+
+.scroll-pane .scroll-bar:vertical {
+    -fx-background-color: #3c3f41; /* 垂直滚动条背景颜色 */
+}
+
+.scroll-pane .scroll-bar .thumb {
+    -fx-background-color: #707070; /* 滚动条拖动块颜色 */
+    -fx-background-insets: 0; /* 滚动条拖动块内边距 */
+    -fx-background-radius: 0; /* 滚动条拖动块圆角半径 */
+}
+
+.scroll-pane .scroll-bar .thumb:hover {
+    -fx-background-color: #A0A0A0; /* 鼠标悬停时滚动条拖动块颜色 */
+}
+
+.scroll-pane .scroll-bar .thumb:pressed {
+    -fx-background-color: #C0C0C0; /* 鼠标按下时滚动条拖动块颜色 */
+}
+
+.scroll-pane .scroll-bar .increment-button,
+.scroll-pane .scroll-bar .decrement-button {
+    -fx-background-color: transparent; /* 滚动条箭头按钮背景颜色 */
+    -fx-padding: 0; /* 滚动条箭头按钮内边距 */
+    -fx-opacity: 0.3;
+}
+
+.scroll-pane .scroll-bar .increment-arrow,
+.scroll-pane .scroll-bar .decrement-arrow {
+    -fx-background-color: #707070; /* 滚动条箭头颜色 */
+    -fx-background-insets: 0; /* 滚动条箭头内边距 */
+    -fx-padding: 0; /* 滚动条箭头内边距 */
+}
+
+.scroll-pane .scroll-bar .increment-arrow:hover,
+.scroll-pane .scroll-bar .decrement-arrow:hover {
+    -fx-background-color: #A0A0A0; /* 鼠标悬停时滚动条箭头颜色 */
+}
+
+.scroll-pane .scroll-bar .increment-arrow:pressed,
+.scroll-pane .scroll-bar .decrement-arrow:pressed {
+    -fx-background-color: #C0C0C0; /* 鼠标按下时滚动条箭头颜色 */
+}

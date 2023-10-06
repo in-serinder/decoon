@@ -1,3 +1,4 @@
 Manifest-Version: 1.0
 Main-Class: main_from
+Main-VM-Options: --module-path "G:\JAVA\deccon\src\pkg\javafx-sdk-17.0.8\lib" --add-modules=javafx.controls,javafx.fxml
 

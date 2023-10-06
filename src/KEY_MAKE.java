@@ -101,7 +101,7 @@ public class KEY_MAKE {
 
 //
         save_path_but.setOnMouseClicked(mouseEvent -> {
-            Save_path=from.save_dialog();
+            Save_path=from.save_dialog("KEY.nec");
             save_path.setText(Save_path);
         });
 

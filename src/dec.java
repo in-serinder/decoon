@@ -1,6 +1,8 @@
 import javax.crypto.spec.SecretKeySpec;
 import javax.crypto.Cipher;
 import java.io.File;
+import java.io.FileOutputStream;
+import java.io.FileInputStream;
 import java.nio.charset.StandardCharsets;
 import java.util.Base64;
 
@@ -27,6 +29,27 @@ public class dec {
         e.printStackTrace();
     }
         return dec_text;
+    }
+
+    public static void decrypt_file(File input_file,File output_file){
+        try{
+            Cipher cipher = Cipher.getInstance("AES");
+            SecretKeySpec secretKeySpec = generateKey();
+            cipher.init(Cipher.DECRYPT_MODE, secretKeySpec);
+
+            byte[] encryptedData = new byte[(int) input_file.length()];
+            FileInputStream encryptedFileInputStream = new FileInputStream(input_file);
+            encryptedFileInputStream.read(encryptedData);
+            encryptedFileInputStream.close();
+
+            byte[] decryptedData = cipher.doFinal(Base64.getDecoder().decode(encryptedData));
+
+            FileOutputStream decryptedFileOutputStream = new FileOutputStream(output_file);
+            decryptedFileOutputStream.write(decryptedData);
+            decryptedFileOutputStream.close();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
     }
 
 
